@@ -1,0 +1,7 @@
+# misc
+.terraform
+dev.tfvars
+prod.tfvars
+.terraform.lock.hcl
+.terraform.*
+terraform.

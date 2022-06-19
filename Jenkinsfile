@@ -17,7 +17,6 @@ pipeline {
             bat 'terraform plan'
             echo 'Hello World'
             check_runs.buildGithubCheck(https://github.com/Anki1229/demoJT.git, f63e52066c486322a3c92e95919fca6e3398cfb6, privateKey, 'success', "unit-test")
-         }
       }
    }
 }

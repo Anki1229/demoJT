@@ -9,12 +9,20 @@ pipeline {
             publishChecks()
          }
       }
-   }
+
       stage('unit test') {
          steps {
             bat 'terraform plan'
             echo 'Hello World'
       }
    }
+
+      stage('Plan') {
+         steps {
+            bat 'terraform plan'
+            echo 'Hello World'
+         }
+      }
+	}
 }
-}
+

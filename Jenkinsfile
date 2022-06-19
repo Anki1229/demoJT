@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            bat 'terraform --version'
+            bat 'terraform init'
             echo 'Hello World'
             publishChecks()
          }
@@ -15,7 +15,7 @@ pipeline {
  stages {
       stage('unit test') {
          steps {
-            bat 'terraform --version'
+            bat 'terraform plan'
             echo 'Hello World'
             check_runs.buildGithubCheck(https://github.com/Anki1229/demoJT.git, f63e52066c486322a3c92e95919fca6e3398cfb6, privateKey, 'success', "unit-test")
          }
